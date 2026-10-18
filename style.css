@@ -9,10 +9,58 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  
+  background-color: aqua;
+  height: 60px;
 }
 
 .nav-links{ 
   display: flex;
   gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a{
+  text-decoration: none;/* removes the browser underline */
+  font-weight: 500;
+}
+input[type="checkbox"]{
+  appearance: none;
+  -webkit-appearance: none;
+}
+.logo{
+  text-decoration: none;
+  color: black;
+}
+span{
+  font-size: 1.5em;
+  color: rgb(10, 12, 9);
+}
+label{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  label{
+    display:block;
+  }
+  ul{
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    gap: 2rem;
+    background-color: gray;
+    transition: 0.5s;
+    top: 60px;
+    height: calc(100vh - 50px);
+    align-items: center;
+    justify-content: center;
+  }
+input[type="checkbox"]:checked ~ ul{
+  left: 0;
+}
+ul a:hover{
+  background-color: azure;
+  border-radius: 5px;
+}
 }
