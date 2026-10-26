@@ -11,6 +11,7 @@
   padding: 1rem 2rem;
   background-color: aqua;
   height: 60px;
+  border-radius: 30px;
 }
 
 .nav-links{ 
@@ -64,3 +65,25 @@ ul a:hover{
   border-radius: 5px;
 }
 }
+
+.hero-cont{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+background-color: azure;
+height: 450px;
+}
+ .intro{
+  flex: 1;
+ }
+ 
+ .hero-cont img{
+  flex: 1;
+  max-width: 250px;
+  /* margin: auto; */
+  height: 200px;
+  margin: 20px 10%;
+  /* margin-top: 20px; */
+  border-radius: 12px;
+  /* margin-bottom: 20px 10%; */
+ }
